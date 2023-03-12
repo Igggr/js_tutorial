@@ -4,7 +4,7 @@
     user.name ='John';
     user.surname = 'Smith';
     user.name = 'Pete';
-    delete user.name
+    delete user.name;
 
 }
 
@@ -15,20 +15,19 @@ function isEmpty(obj: object): boolean {
 
 // 4
 {
-    let salaries = {
+    const salaries = {
         John: 100,
         Ann: 160,
         Pete: 130
     };
-    const sum = Object.values(salaries).reduce((acc, salary) => acc + salary, 0)
+    const sum = Object.values(salaries).reduce((acc, salary) => acc + salary, 0);
 }
 
 // Умножаем все числовые свойства на 2
-function multiplyNumeric(obj: object) {
+function multiplyNumeric(obj: Record<string, unknown>) {
     for (const [key, val] of Object.entries(obj)) {
         if (typeof val === 'number') {
-            // @ts-ignore
-            obj[key] = val * 2
+            obj[key] = val * 2;
         }
     }
 }

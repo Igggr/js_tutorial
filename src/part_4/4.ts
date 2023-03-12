@@ -9,7 +9,7 @@
         },
         sum(): number {
             // @ts-ignore
-            return this.x + this.y
+            return this.x + this.y;
         },
         mul(): number {
             // @ts-ignore
@@ -19,7 +19,7 @@
 }
 
 // 3 Цепь вызовов
-let ladder = {
+const ladder = {
     step: 0,
     up() {
       this.step++;

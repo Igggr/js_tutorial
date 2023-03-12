@@ -6,7 +6,7 @@ function unique<T>(arr: T[]) {
         if (visited.has(el)) return false;
         visited.add(el);
         return true;
-    })    
+    });    
 }
 
 
@@ -19,7 +19,7 @@ function aClean(words: string[]) {
         if (visited.has(key)) return false;
         visited.add(key);
         return true;
-    })
+    });
 
 }
 

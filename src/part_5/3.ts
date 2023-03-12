@@ -1,7 +1,7 @@
 // 1. Сделать первый символ заглавным
 export function ucFirst(str: string): string {
     if (str.length === 0) {
-        return ""
+        return "";
     }
     return str[0].toUpperCase() + str.slice(1).toLowerCase();
 }

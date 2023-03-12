@@ -1,5 +1,5 @@
 // 1 Преобразуйте объект в JSON, а затем обратно в обычный объект
-let user = {
+const user = {
   name: "Василий Иванович",
   age: 35
 };
@@ -7,11 +7,11 @@ let user = {
 const copy = JSON.parse(JSON.stringify(user));
 
 // 2 Исключить обратные ссылки
-let room = {
+const room = {
     number: 23
   };
   
-  let meetup = {
+  const meetup = {
     title: "Совещание",
     occupiedBy: [{name: "Иванов"}, {name: "Петров"}],
     place: room

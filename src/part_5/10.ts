@@ -2,7 +2,7 @@ import { count } from "./9";
 
 // 1
 {
-let user = { name: "John", years: 30 };
+const user = { name: "John", years: 30 };
 
 // ваш код должен быть с левой стороны:
 // @ts-ignore
@@ -14,14 +14,14 @@ console.log( isAdmin ); // false
 }
 
 // 2 Максимальная зарплата
-let salaries = {
+const salaries = {
   "John": 100,
   "Pete": 300,
   "Mary": 250
 };
 
 function topSalary(obj: typeof salaries): string | null{
-    if (count(obj) === 0) { return null} 
+    if (count(obj) === 0) { return null;} 
     const topSalary = Math.max(...Object.values(obj));
     const [employee, _] = Object.entries(obj)
                                 .find(([_, val]) => val === topSalary) || [null, null];

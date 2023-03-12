@@ -1,6 +1,6 @@
 // 1. Сумма свойств объекта
 
-let salaries = {
+const salaries = {
     "John": 100,
     "Pete": 300,
     "Mary": 250
@@ -14,5 +14,5 @@ console.log( sumSalaries(salaries) ); // 650
 
 // 2 Подсчёт количества свойств объекта
 export function count(obj: object): number {
-    return Object.keys(obj).length
+    return Object.keys(obj).length;
 }

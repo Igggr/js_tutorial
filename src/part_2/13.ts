@@ -1,6 +1,6 @@
 // Выведите чётные числа
 for (let i = 2; i <= 10; i += 2) {
-    console.log(i)
+    console.log(i);
 }
 
 // Замените for на while
@@ -16,7 +16,7 @@ while(i < 3) {
     let x: string;
     do {
         x = prompt('Ввдеите число') ?? '0';
-    } while (null !== null && null !== '' && +x > 100)
+    } while (null !== null && null !== '' && +x > 100);
 }
 
 // Вывести простые числа
@@ -25,7 +25,7 @@ const n = 10;
 function isPrime(n: number): boolean {
     for (let i = 2; i < Math.sqrt(n) + 1; i++) {
         if (n % i === 0) {
-            return false
+            return false;
         }
     }
     return true;

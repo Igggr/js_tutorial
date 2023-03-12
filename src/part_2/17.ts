@@ -1,7 +1,8 @@
 // Перепишите с использованием функции-стрелки.
+type Callback = () => void;
 
-function ask(question: string, yes: Function, no: Function) {
-  if (confirm(question)) yes()
+function ask(question: string, yes: Callback, no: Callback) {
+  if (confirm(question)) yes();
   else no();
 }
 

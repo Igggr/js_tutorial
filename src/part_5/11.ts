@@ -44,7 +44,7 @@ function  getSecondsToday(): number {
 function getSecondsToTomorrow(): number {
     const date = new Date();
     const tomorrow = new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1);
-    return Math.round((+tomorrow - +date) / 1000)
+    return Math.round((+tomorrow - +date) / 1000);
 }
 
 // 8 Форматирование относительной даты
@@ -53,11 +53,11 @@ export function formatDate(date: Date) {
     const diff = +now - +date;
 
     if (diff < 1000) {
-        return "прямо сейчас"
+        return "прямо сейчас";
     } else if (diff < 1000*60) {
-        return `${Math.floor(diff/1000)} сек. назад`
+        return `${Math.floor(diff/1000)} сек. назад`;
     } else if (diff < 1000*60*60) {
-        return `${Math.floor(diff / (1000 * 60))} мин. назад`
+        return `${Math.floor(diff / (1000 * 60))} мин. назад`;
     } else {
         const day = date.getDate().toString().padStart(2, '0');
         const month = (date.getMonth() + 1).toString().padStart(2, '0');

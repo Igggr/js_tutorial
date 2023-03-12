@@ -12,9 +12,9 @@ describe("capital 5", () => {
     });
 
     it('truncate string', () => {
-        expect(truncate('abcdef', 10)).toBe('abcdef')
-        expect(truncate('abcdef', 3)).toBe('ab…')
-    })
+        expect(truncate('abcdef', 10)).toBe('abcdef');
+        expect(truncate('abcdef', 3)).toBe('ab…');
+    });
 
     it('maxSubSum', () => {
         expect(getMaxSubSum([-1, 2, 3, -9])).toBe(5);
@@ -24,7 +24,7 @@ describe("capital 5", () => {
         expect(getMaxSubSum([100, -9, 2, -3, 5])).toBe(100);
         expect(getMaxSubSum([1, 2, 3])).toBe(6); 
         expect(getMaxSubSum([-1, -2, -3])).toBe(0);
-    })
+    });
 
     it('camelize', () => {
         expect(camelize("background-color")).toBe('backgroundColor');
@@ -36,7 +36,7 @@ describe("capital 5", () => {
 
         it("returns the filtered values", function() {
       
-          let arr = [5, 3, 8, 1];
+          const arr = [5, 3, 8, 1];
       
           filterRangeInPlace(arr, 2, 5); 
       
@@ -53,8 +53,7 @@ describe("capital 5", () => {
         let calculator: any;
       
         beforeEach(function() {
-            // @ts-ignore
-            calculator = new Calculator();
+          calculator = new (Calculator as any)();
         });
       
         it("calculate(12 + 34) = 46", function() {
@@ -109,5 +108,5 @@ describe("capital 5", () => {
       
       });
       
-})
+});
 

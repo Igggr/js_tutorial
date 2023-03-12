@@ -29,6 +29,6 @@ function  random(min: number, max: number): number {
 
 // 6. Случайное целое число от min до max
 function randomInteger(min: number, max: number): number {
-    const random = Math.random() * (max - min + 1) + min - 0.5
+    const random = Math.random() * (max - min + 1) + min - 0.5;
     return Math.round(random);
 }

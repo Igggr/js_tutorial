@@ -4,7 +4,7 @@ const guess = prompt('Какое «официальное» название Jav
 if (guess === 'ECMAScript') {
     console.log('«Верно!');
 } else {
-    console.log('Не знаете? ECMAScript!')
+    console.log('Не знаете? ECMAScript!');
 }
 
 // 3 Покажите знак 
@@ -21,11 +21,11 @@ if (guess === 'ECMAScript') {
 
 // 4 Перепишите 'if' в '?'
 
-let result = (a + b < 4) ?  'Мало' : 'Много';
+const result = (a + b < 4) ?  'Мало' : 'Много';
 
 // 5 Перепишите 'if..else' в '?'
-let login: string = '';
-let message = (login ===  'Сотрудник')
+const login = '';
+const message = (login ===  'Сотрудник')
               ? 'Привет'
               : (login === 'Директор')
                 ?  'Здравствуйте'
