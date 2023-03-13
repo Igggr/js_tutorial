@@ -26,7 +26,8 @@ Calculator.prototype.mul = function() {
 
 // 3 Создайте new Accumulator
 function Accumulator(startingValue: number) {
-    this.value = startingValue;
+    // @ts-ignore
+    as.value = startingValue;
 }
 
 Accumulator.prototype.read = function() {

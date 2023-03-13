@@ -24,7 +24,8 @@ if (guess === 'ECMAScript') {
 const result = (a + b < 4) ?  'Мало' : 'Много';
 
 // 5 Перепишите 'if..else' в '?'
-const login = '';
+let login = '';
+login = '?';
 const message = (login ===  'Сотрудник')
               ? 'Привет'
               : (login === 'Директор')
