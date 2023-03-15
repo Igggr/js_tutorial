@@ -56,15 +56,17 @@ async function wait() {
     return 10;
 }
 
-function f() {
-    // ...что здесь написать?
-    // чтобы вызвать wait() и дождаться результата "10" от async–функции
-    // не забывайте, здесь нельзя использовать "await"
-    
-    wait().then((res) => console.log(res));
+{
+    function f() {
+        // ...что здесь написать?
+        // чтобы вызвать wait() и дождаться результата "10" от async–функции
+        // не забывайте, здесь нельзя использовать "await"
 
-    (async function () {
-        const res = await wait();
-        console.log(res)
-    })();
+        wait().then((res) => console.log(res));
+
+        (async function () {
+            const res = await wait();
+            console.log(res)
+        })();
+    }
 }

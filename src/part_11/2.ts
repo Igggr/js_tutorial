@@ -10,7 +10,7 @@
 
 // Анимация круга с помощью промиса
 
-function showCircle(cx: number, cy: number, radius: number) {
+function showCircle(cx: number, cy: number, radius: number): Promise<HTMLDivElement> {
     let div = document.createElement('div');
     div.style.width = '0';
     div.style.height = '0';
@@ -32,7 +32,7 @@ function showCircle(cx: number, cy: number, radius: number) {
     })
 }
 
-showCircle(150, 150, 100).then((div: HTMLDivElement) => {
+showCircle(150, 150, 100).then((div) => {
     div.classList.add('message-ball');
     div.append("Hello, world!");
 });
